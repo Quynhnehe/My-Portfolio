@@ -1,0 +1,103 @@
+/*Global*/
+/*Cross Browser : thể hiện đồng đều trang web trên mọi nền tảng */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Header*/
+#navbarPort .nav-item .nav-link
+{
+    color: white;
+    transition: all .5s;
+    
+}
+#navbarPort .nav-item:hover a
+{
+    color: #35a22c;
+}
+
+#navbarPort .nav-item .nav-link::after 
+{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #35a22c;
+    display: block;
+    transition: all .5s;
+}
+#navbarPort .nav-item:hover .nav-link::after
+{
+    width: 100%;
+}
+ .header
+{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+/*Carouse*/
+.carouesPort .carousel-item
+{
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.carouesPort .carousel-item:nth-child(1)
+{
+    background-image: url(../img/img/finland.jpg);
+}  
+.carouesPort .carousel-item:nth-child(2)
+{
+    background-image: url(../img/img/mountains.jpg);
+}
+.carouesPort .carousel-item:nth-child(3)
+{
+    background-image: url(../img/img/mountains-1.jpg); 
+}
+
+.carousel-inner .img_thumb
+{
+    width: 150px;
+    margin: 0 auto;
+}
+.carousel-inner .img_thumb img
+{
+    border-radius: 50%;
+}
+.carouesPort .carousel-caption
+{
+    /*top: 4rem;
+    bottom: 13rem;*/
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-indicators li 
+{
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+.carousel-indicators .active 
+{
+    background-color: #35a22c;
+}
+
+@media screen and (max-width: 992px)
+{
+    .project_content .card-body .card-title
+    {
+        font-size: 1.35rem;
+    }
+}
+.tab-content>.active {
+    display: flex;
+}
